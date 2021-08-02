@@ -1,0 +1,167 @@
+.jia_header_box {
+  width: auto;
+  background: linear-gradient(130deg, #FF6F2D 0%, #F32F11 100%);
+  opacity: 1;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.title {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.header {
+  width: 130%;
+  background: linear-gradient(130deg, #FF6F2D 0%, #F32F11 100%);
+  opacity: 1;
+  border-radius: 0px 0px 280rpx 280rpx;
+  padding-bottom: 120rpx;
+}
+
+.newsMy_top {
+  color: #ffffff;
+  width: 750rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 150rpx;
+}
+
+.newsMy {
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.userinfo-avatar {
+  width: 112rpx;
+  height: 112rpx;
+  margin: 0 20rpx 0 40rpx;
+  border-radius: 50%;
+}
+
+.newsMy-s {
+  width: 570rpx;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.nesMy-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.newsMy{
+  margin-top: 62rpx;
+}
+.newsMy-s{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28rpx;
+  width: auto;
+  flex: 1;
+}
+.nesMyname-bot{
+  font-size: 32rpx;
+color: #FFFFFF;
+}
+.nesMyname-bot {
+  margin-bottom: 20rpx;
+}
+
+.nesMy-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 48rpx;
+}
+.shezhi>image{
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.Theremodules {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rpx;
+}
+
+.modules {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+
+.modules-num {
+  margin-top: 18rpx;
+  margin-bottom: 20rpx;
+}
+
+.mywallet {
+  width: 694rpx;
+  height: 126rpx;
+  background: #FFFFFF;
+  margin: 20rpx auto 0rpx;
+  border-radius: 16rpx;
+  display: flex;
+}
+
+.mywallet_left {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.mywallet_left_q1 {
+  flex: 1;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mywallet_left_q1_text {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #666666;
+
+}
+
+.mywallet_right {
+  width: 176rpx;
+  height: 126rpx;
+  background: linear-gradient(139deg, #FF6F2D 0%, #F32F11 100%);
+  opacity: 1;
+  border-radius: 0rpx 16rpx 16rpx 0rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mywallet_right>image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.mywallet_right>text {
+  font-size: 24rpx;
+  color: #FFFFFF;
+  margin-top: 10rpx;
+}
+

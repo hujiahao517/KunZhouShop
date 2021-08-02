@@ -1,0 +1,173 @@
+/* pages/view/Tools_and_Services/backstages/shop_edit/shop_edit.wxss */
+.title {
+  width: 100%;
+  background-color: #FFF3CC;
+  padding: 0rpx 28rpx;
+  box-sizing: border-box;
+  height: 67rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #F32F11;
+  display: flex;
+  align-items: center;
+}
+input{
+  font-size: 24rpx;
+}
+
+.content {
+  width: 694rpx;
+  background: #FFFFFF;
+  margin: 0 auto;
+  padding: 0rpx 28rpx;
+  box-sizing: border-box;
+}
+.content_q1{
+  height: 90rpx;
+  display: flex;
+  align-content: center;
+  border-bottom: 1px solid #E8E8E8;
+  font-size: 28rpx;
+}
+.content_q1_left{
+  width: 198rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+color: #333333;
+
+}
+.content_q1_left>text{
+  color: #FF6F2D;
+}
+.content_q1_right{
+  flex: 1;
+
+}
+.input_nochange,.input_change{
+  width: 100%;
+  height: 100%;
+  font-size: 24rpx;
+}
+.input_nochange{
+  color: #333333;
+}
+.input_change{
+color: #999999;
+}
+.checkbox_box{
+  display: flex;
+  align-items: center;
+}
+.radio .wx-radio-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;/* 圆角 */
+  width: 34rpx;
+  height: 34rpx;
+  border: 1rpx solid var(--themeColor);
+  background:  #fff;
+}
+
+/* 选中后的 背景样式  */
+.radio .wx-radio-input.wx-radio-input-checked{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid var(--themeColor);
+  background:  #fff;
+  border-color: var(--themeColor)!important;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+.radio .wx-radio-input.wx-radio-input-checked::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 去除对号 */
+  content: ''; 
+  /* background: #fff; */
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  /* background: red; */
+  background-color:  var(--themeColor);
+  /* 居中 */
+  margin-left: 0rpx;
+  display: flex;
+  position: relative;
+}
+.icon_right{
+  width: 24rpx;
+  height: 24rpx;
+}
+.icon{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.content_q2{
+  border-bottom:none;
+}
+.textarea{
+  width: 638rpx;
+height: 268rpx;
+background: #F4F4F4;
+border-radius: 16rpx;
+padding: 24rpx 28rpx 44rpx 24rpx;
+box-sizing: border-box;
+margin: 0 auto;
+}
+.shop_img_box{
+  width: 694rpx;
+  background: #FFFFFF;
+  margin: 0rpx auto 0rpx;
+  padding: 34rpx 28rpx 0rpx;
+  box-sizing: border-box;
+}
+.shop_img_box_title{
+  color: var(--themeColor);
+  font-size: 28rpx;
+}
+.imgs_box{
+  width: 694rpx;
+  background: #FFFFFF;
+  margin: 24rpx auto 0rpx;
+  display: flex;
+}
+.img{
+  width: 152rpx;
+  height: 152rpx;
+  border: 2rpx dashed #999999;
+  position: relative;
+  margin-right: 8rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img>image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 16rpx;
+}
+/* .van-uploader{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 16rpx;
+}
+.van-uploader__upload{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 0rpx 0rpx !important;
+} */
+.huili{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.huili_Text{
+  font-size: 24rpx;
+  color: #333333;
+}

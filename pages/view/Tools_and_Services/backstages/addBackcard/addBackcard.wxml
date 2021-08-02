@@ -1,0 +1,19 @@
+<!--pages/view/Tools_and_Services/factory_backstage/addBackcard/addBackcard.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="title">添加银行卡</view>
+    <view class="name">
+      <view class="name_left">姓名</view>
+      <view class="name_right">
+        <input type="text" placeholder="请输入持卡人姓名" placeholder-class="placeholder_input" />
+      </view>
+    </view>
+    <view class="name2">
+      <view class="name_left">卡号</view>
+      <view class="name_right">
+        <input type="text" placeholder="请输入卡号" placeholder-class="placeholder_input" />
+      </view>
+    </view>
+  </view>
+  <view class="determine">确定</view>
+</view>

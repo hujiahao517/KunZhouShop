@@ -1,0 +1,44 @@
+/* pages/common/prifile/Tools_and_Services/Tools_and_Services.wxss */
+/* 工具与服务 */
+.Tools_and_Services {
+  width: 694rpx;
+  margin: 20rpx auto 0rpx;
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  padding: 0rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.Tools_and_Services_title {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: #000000;
+  padding: 20rpx 0rpx;
+}
+
+.Tools_and_Services_bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Tools_and_Services_bottom_q1 {
+  width: 25%;
+  height: 140rpx;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.Tools_and_Services_bottom_q1>image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.Tools_and_Services_bottom_q1>text {
+  font-size: 24rpx;
+  color: #333333;
+  margin-top: 12rpx;
+}

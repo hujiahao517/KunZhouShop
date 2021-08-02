@@ -1,0 +1,72 @@
+/* pages/view/Tools_and_Services/backstages/Put_on/Put_on.wxss */
+@import "/pages/view/Tools_and_Services/backstages/Addshop/Addshop.wxss";
+.content{
+  margin: 20rpx 28rpx 0rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--backgroundColor);
+}
+.content_Q1{
+  background-color: #ffffff;
+}
+.img{
+  width: 340rpx;
+  height: 340rpx;
+  border-radius: 16rpx 16rpx 0rpx 0rpx;
+}
+.text{
+  width: 316rpx;
+height: 74rpx;
+padding: 20rpx 12rpx 0rpx;
+color: #333333;
+font-size: 24rpx;
+overflow:hidden;  
+text-overflow:ellipsis;  
+display:-webkit-box; 
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2;  
+}
+.btn_box{
+ height: 68rpx;
+ display: flex;
+ align-items: center;
+ padding: 0rpx 12rpx;
+ justify-content: space-between;
+}
+.btn_box_left .btn_box_right{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+.btn_box_left{
+  color: var(--themeColor);
+  font-size: 28rpx;
+font-weight: bold;
+}
+.btn_box_left>text{
+  font-size: 20rpx;
+}
+.btn_box_right{
+  font-size: 20rpx;
+color: var(--themeColor);
+display: flex;
+}
+.btn_active{
+  background-color: var(--themeColor);
+  color: #ffffff;
+}
+.btn_box_right_left,.btn_box_right_right{
+  padding: 0rpx 12rpx;
+  border: 1px solid #FF6F2D;
+  border-radius: 32rpx;
+}
+.btn_box_right_right{
+  margin-left: 20rpx;
+}
+button{
+  font-size: 32rpx !important;
+}
+.van-action-sheet__item--hover, .van-action-sheet__cancel--hover{
+  color: #FF6F2D !important;
+}

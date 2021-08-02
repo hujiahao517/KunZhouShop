@@ -1,0 +1,11 @@
+<!--pages/common/search/search.wxml-->
+   <!-- 搜索 -->
+   <view class="search">
+      <input class="search_input" type="text" placeholder="请输入您想要搜索的商品/网点/网店" disabled="true" 
+        placeholder-class="search_input_placeholder" />
+      <image class="search_img" src="/pages/assets/img/home_img/icon_search.png"></image>
+      <view class="search_text">
+        搜索
+      </view>
+    </view>
+

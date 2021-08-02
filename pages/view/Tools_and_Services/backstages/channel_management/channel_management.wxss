@@ -1,0 +1,16 @@
+/* pages/view/Tools_and_Services/backstages/channel_management/channel_management.wxss */
+.renhe {
+  display: block;
+  width: 262rpx;
+  height: 241rpx;
+  margin: 342rpx auto 0rpx;
+}
+
+.renhe_bottom {
+  margin-top: 52rpx;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+}

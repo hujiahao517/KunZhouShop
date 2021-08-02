@@ -1,0 +1,31 @@
+<!--pages/common/prifile/my_order/myorder.wxml-->
+<!-- 我的订单盒子 -->
+<!-- 0是会员 1是厂家 -->
+<view class="{{type == 0 ? 'order_box' : 'order_box1'}} ">
+  <view class="order_title">
+    <view wx:if="{{type == 0 || type == 1}}" class="order_title_left">我的订单</view>
+    <view class="order_title_right">
+      <text wx:if="{{type == 0}}">查看全部</text>
+      <text wx:if="{{type == 1}}">查看全部订单</text>
+      <image src="/pages/assets/img/home_img/icon_right.png"></image>
+    </view>
+  </view>
+  <view class="order_bottom">
+    <!-- 当type = 0 时 会员端 -->
+    <view class="order_bottom_q1" wx:if="{{type == 0}}" wx:for="{{order_mode}}" wx:key="item">
+      <image src="{{item.img}}"></image>
+      <text>{{item.text}}</text>
+      <text class="icon" wx:if="{{item.number != 0}}">{{item.number}}</text>
+    </view>
+
+
+    <!-- 当type = 1 时 厂家后台 -->
+    <view class="order_bottom_q2" wx:if="{{type == 1}}" wx:for="{{order_mode_chanjia}}" wx:key="item" bindtap="click_order" data-index="{{index}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.text}}</text>
+      <text class="icon" wx:if="{{item.number != 0}}">{{item.number}}</text>
+    </view>
+
+  </view>
+
+</view>

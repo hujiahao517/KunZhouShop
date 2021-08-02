@@ -1,0 +1,12 @@
+<!--pages/common/like_and_stroll/like_and_stroll.wxml-->
+<view class="link_and_stroll">
+    <image wx:if="{{type==1}}" class="stroll_img" src="/pages/assets/img/home_img/xingxing.png"></image>
+    <text wx:if="{{type==1}}" class="stoll_Text">每日一逛</text>
+
+
+    <image wx:if="{{type==2}}" class="stroll_img" src="/pages/assets/img/home_img/xin.png"></image>
+    <text wx:if="{{type==2}}" class="stoll_Text">猜你喜欢</text>
+
+
+
+</view>

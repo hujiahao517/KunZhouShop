@@ -1,0 +1,6 @@
+<!--pages/view/Tools_and_Services/backstages/channel_management/channel_management.wxml-->
+<!-- 渠道管理 -->
+<view>
+  <image class="renhe" src="/pages/assets/img/network/renhe.png"></image>
+  <view class="renhe_bottom">该功能暂未开放</view>
+</view>

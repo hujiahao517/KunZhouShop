@@ -1,0 +1,43 @@
+<view>
+
+<!-- 中间内容 -->
+<view class='index_content'>
+   <!-- 搜索框 -->
+   <view class='index_search'>
+      <image src='/pages/assets/img/icon/search.png'  class='search_img'></image>
+      <!--  -->
+      <view>
+         <input type="text" placeholder="请输入您要搜索的网点" class='index_input'/>
+      </view> 
+      <view class='search_sure'>确定</view>
+   </view>
+   <!-- 网点 -->
+   <view class='index_container'>
+      <!-- 循环 -->
+      <!--外层循环 -->
+      <view class='index_details'>
+         <!-- 左边 -->
+         <view class='details_avatar'>
+            <image src='http://lg.kunzhousc.com/public/static/merch/moren.png'  class='avatar_img'></image>
+         </view>
+         <!-- 中间 -->
+         <view class='details_center'>
+            <view class='right_top'>
+               <view class='center_wagndian'>29号网点</view>
+               <view class='right_store'>共10种商品</view>
+            </view>
+            <view class='right_bottom'>
+               <!-- 内层循环 -->
+               <view wx:for='{{arr}}' wx:for-index='index' wx:for-item='item' wx:key='index' class='arr_image' wx:if='{{index<4}}'>
+                  <image src='{{item.img}}' class='bottom_img'></image>
+               </view>
+            <image src='/pages/assets/img/icon/arrow_right.png' class='right_arrow' bindtap='arrow'></image>
+               
+            </view>
+
+         </view>
+        
+      </view>      
+   </view>
+</view> 
+</view>

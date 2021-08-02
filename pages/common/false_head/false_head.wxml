@@ -1,0 +1,3 @@
+<!--pages/common/false_head/false_head.wxml-->
+<!-- 此组件为假的头部 因为小程序默认header 不能渐变 -->
+<view class="false_head"></view>

@@ -1,0 +1,4 @@
+<!--pages/common/goods/goodsList/goodsList.wxml-->
+<view class="goods">
+  <goodsListItem class="goodsListItem" wx:for="{{5\}}"></goodsListItem>
+</view>

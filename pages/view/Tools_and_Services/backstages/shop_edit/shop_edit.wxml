@@ -1,0 +1,208 @@
+<!--pages/view/Tools_and_Services/backstages/shop_edit/shop_edit.wxml-->
+<!-- 商品编辑 -->
+<!-- 提示 -->
+<view class="title">
+  *提示：商品图片、商品详情发生改变需重新审核哦~
+</view>
+<!-- 商品编码* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">商品编码 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="FBN0000001" />
+    </view>
+  </view>
+</view>
+<!-- 商品名称* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">商品名称 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_change" type="text" value="2400W高清像素双彩屏运动相机 智能防抖强劲续航户外摄像WiFi相机" />
+    </view>
+  </view>
+</view>
+<!-- 商品关键词* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">商品关键词 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_change" type="text" value="全麦/低脂代餐主食" />
+    </view>
+  </view>
+</view>
+<!-- 商品分类* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">商品分类 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="视频生鲜" />
+    </view>
+  </view>
+</view>
+<!-- 生产地* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">生产地 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="邵阳市/武陵区" />
+    </view>
+  </view>
+</view>
+<!-- 品牌* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">品牌 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="金钰" />
+    </view>
+  </view>
+</view>
+<!-- 保质期* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">保质期 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="见包装正面" />
+    </view>
+  </view>
+</view>
+<!-- 主要成分** -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">主要成分 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="全麦粉、小麦粉、水、白砂糖、酵母、食用盐、淀粉、全脂乳粉（脱氪乙酸钠、维生素C）" />
+    </view>
+  </view>
+</view>
+<!-- 包装方式* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">包装方式 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="袋装" />
+    </view>
+  </view>
+</view>
+<!-- 是否礼盒装 -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">是否礼盒装 <text>*</text></view>
+    <view class="content_q1_right checkbox_box">
+      <label class="radio">
+        <radio value="r1"  disabled="true" checked="true" />是
+      </label>
+      <!-- <label class="radio">
+        <radio value="r2" />否
+      </label> -->
+    </view>
+  </view>
+</view>
+
+<!-- 进口/国产* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">进口/国产 <text>*</text></view>
+    <view class="content_q1_right checkbox_box">
+      <label class="radio">
+        <radio value="r1"  disabled="true" checked="true" />是
+      </label>
+      <!-- <label class="radio">
+        <radio value="r2" />否
+      </label> -->
+    </view>
+  </view>
+</view>
+
+<!-- 规格* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">规格 <text>*</text></view>
+    <view class="content_q1_right icon" bindtap="add_guige">
+      <image class="icon_right" src="/pages/assets/img/icon/icon_right.png"></image>
+    </view>
+  </view>
+</view>
+<!-- 食品口味* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">食品口味 <text>*</text></view>
+    <view class="content_q1_right">
+      <input class="input_nochange" disabled="true" type="text" value="全麦吐司面包" />
+    </view>
+  </view>
+</view>
+
+<!-- 获利方式* -->
+<view class="content">
+  <view class="content_q1">
+    <view class="content_q1_left">获利方式 <text>*</text></view>
+    <view class="content_q1_right huili">
+    <view>
+      <text class="huili_Text">返零钱</text>
+      <text class="huili_Text">/现金</text>
+      <text class="huili_Text">/积分</text>
+      <text class="huili_Text">/抽奖/搭配</text>
+    </view>
+      <image class="icon_right" src="/pages/assets/img/icon/icon_right.png"></image>
+    </view>
+  </view>
+</view>
+<!-- 备注* -->
+<view class="content">
+  <view class="content_q1 content_q2">
+    <view class="content_q1_left">备注 <text>*</text></view>
+    <view class="content_q1_right">
+    </view>
+  </view>
+  <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+</view>
+<!-- 商品主图 -->
+<view class="shop_img_box">
+  <view class="shop_img_box_title">商品主图</view>
+  <view class="imgs_box">
+      <!-- <view class="img">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/7bc86d735b339e1e3c34cada4a13a0a5.png"></image>
+        
+      </view>
+      <view class="img">
+        <van-uploader accept="image" preview-image preview-full-image deletable max-count="1" file-list="{{ fileList[0] }}" bind:after-read="afterRead" />
+      </view>
+      <view class="img"></view>
+      <view class="img"></view> -->
+      <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead"  deletable="{{ true }}" mutiple="{{false}}" bind:delete="delete"  max-count="" />
+  </view>
+</view>
+<!-- 商品图片 -->
+<view class="shop_img_box">
+  <view class="shop_img_box_title">商品图片</view>
+  <view class="imgs_box">
+      <!-- <view class="img">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/7bc86d735b339e1e3c34cada4a13a0a5.png"></image>
+        
+      </view>
+      <view class="img">
+        <van-uploader accept="image" preview-image preview-full-image deletable max-count="1" file-list="{{ fileList[0] }}" bind:after-read="afterRead" />
+      </view>
+      <view class="img"></view>
+      <view class="img"></view> -->
+      <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead"  deletable="{{ true }}" mutiple="{{false}}" bind:delete="delete"  max-count="4" />
+  </view>
+</view>
+<!-- 商品详情页 -->
+<view class="shop_img_box">
+  <view class="shop_img_box_title">商品详情页</view>
+  <view class="imgs_box">
+      <!-- <view class="img">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/7bc86d735b339e1e3c34cada4a13a0a5.png"></image>
+        
+      </view>
+      <view class="img">
+        <van-uploader accept="image" preview-image preview-full-image deletable max-count="1" file-list="{{ fileList[0] }}" bind:after-read="afterRead" />
+      </view>
+      <view class="img"></view>
+      <view class="img"></view> -->
+      <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead"  deletable="{{ true }}" mutiple="{{false}}" bind:delete="delete"  max-count="4" />
+  </view>
+</view>

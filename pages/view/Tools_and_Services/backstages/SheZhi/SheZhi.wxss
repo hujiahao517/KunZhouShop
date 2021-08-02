@@ -1,0 +1,34 @@
+/* pages/view/Tools_and_Services/factory_backstage/SheZhi/SheZhi.wxss */
+.content{
+  width: 694rpx;
+background: #FFFFFF;
+border-radius: 16rpx;
+padding: 0rpx 28rpx 46rpx;
+box-sizing: border-box;
+margin-top: 20rpx;
+
+}
+.name{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1rpx solid #E8E8E8;
+  height: 90rpx;
+}
+.name_left{
+  font-size: 28rpx;
+font-weight: 400;
+color: #333333;
+}
+.name>image{
+  width: 24rpx;
+  height: 24rpx;
+}
+.isbangding{
+  font-size: 20rpx;
+font-weight: 400;
+color: #999999;
+margin-left: 48rpx;
+}

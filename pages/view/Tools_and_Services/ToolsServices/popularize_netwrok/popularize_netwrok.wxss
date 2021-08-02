@@ -1,0 +1,105 @@
+
+.index_content{
+  width: 750rpx;
+background: #F4F4F4;
+opacity: 1;
+}
+.index_search{
+  width: 750rpx;
+height: 88rpx;
+background: #FFFFFF;
+opacity: 1;
+display: flex;
+align-items: center;
+}
+.search_img{
+  width:48rpx;
+  height: 48rpx;
+  margin-left:56rpx;
+}
+.index_input{
+  width: 514rpx;
+  height: 64rpx;
+  background: #FFFFFF;
+  border: 2rpx solid #FF6F2D;
+  opacity: 1;
+  border-radius: 40rpx;
+  font-size: 24rpx;
+font-family: PingFang SC;
+font-weight: 500;
+line-height: 30rpx;
+color: #999999;
+padding-left:28rpx;
+margin-left:18rpx;
+box-sizing: border-box;
+}
+.search_sure{
+  font-size: 28rpx;
+font-family: PingFang SC;
+font-weight: 500;
+line-height: 26rpx;
+color: #999999;
+opacity: 1;
+margin-left:28rpx;
+}
+.index_details{
+  width: 694rpx;
+height: 228rpx;
+background: #FFFFFF;
+padding:28rpx;
+box-sizing: border-box;
+opacity: 1;
+border-radius: 16rpx;
+margin:20rpx auto;
+display: flex;
+align-items: center;
+}
+
+
+.avatar_img{
+  width:80rpx;
+  height:80rpx;
+}
+.right_top{
+  display: flex;
+  margin-left:20rpx;
+ align-items: center;
+}
+.center_wagndian{
+  font-size: 28rpx;
+font-family: PingFang SC;
+font-weight: bold;
+line-height: 40rpx;
+color: #333333;
+opacity: 1;
+}
+.right_store{
+  font-size: 22rpx;
+font-family: Segoe UI;
+font-weight: 400;
+line-height: 30rpx;
+color: #000000;
+opacity: 1;
+margin-left:252rpx;
+}
+.bottom_img{
+  width:112rpx;
+  height: 112rpx;
+}
+.right_bottom{
+  display: flex;
+  align-items: center;
+  margin-left:8rpx;
+}
+
+.arr_image{
+  margin-left:12rpx;
+}
+.right_bottom{
+  margin-top:20rpx;
+}
+.right_arrow{
+  width:24rpx;
+  height: 24rpx;
+  margin-left:32rpx;
+}

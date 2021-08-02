@@ -1,0 +1,50 @@
+/* pages/view/Tools_and_Services/Tools_and_Services.wxss */
+@import '/pages/view/profile/profile.wxss';
+
+.header {
+  width: 130%;
+  background: linear-gradient(130deg, #FF6F2D 0%, #F32F11 100%);
+  opacity: 1;
+  border-radius: 0px 0px 280rpx 280rpx;
+  padding-bottom: 0rpx;
+  height: 516.29rpx;
+}
+
+.title {
+  width: auto;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 0rpx 28rpx;
+}
+
+.title>image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.newsMy {
+  margin-top: 62rpx;
+}
+
+.newsMy-s {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28rpx;
+  width: auto;
+  flex: 1;
+}
+
+.nesMyname-bot {
+  font-size: 32rpx;
+  color: #FFFFFF;
+}
+
+.changjia {
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #FFFFFF
+}
+

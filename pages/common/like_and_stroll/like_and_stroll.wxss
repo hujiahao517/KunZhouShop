@@ -1,0 +1,22 @@
+/* pages/common/like_and_stroll/like_and_stroll.wxss */
+.link_and_stroll {
+  width: 694rpx;
+  height: 84rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.stroll_img {
+  width: 44rpx;
+  height: 44rpx;
+  margin-left: 28rpx;
+}
+
+.stoll_Text {
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 44rpx;
+  color: #333333;
+  margin-left: 12rpx;
+}

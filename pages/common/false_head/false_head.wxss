@@ -1,0 +1,7 @@
+/* pages/common/false_head/false_head.wxss */
+.false_head{
+  width: 100%;
+  height: 88rpx;
+  background: linear-gradient(130deg, #FF6F2D 0%, #F32F11 100%);
+  opacity: 1;
+}

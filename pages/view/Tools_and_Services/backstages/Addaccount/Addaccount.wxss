@@ -1,0 +1,53 @@
+/* pages/view/Tools_and_Services/factory_backstage/Addaccount/Addaccount.wxss */
+@import "/pages/view/Tools_and_Services/backstages/factory_information/factory_information.wxss";
+.addcontent{
+  width: 694rpx;
+  height: 222rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  margin: 20rpx auto 0rpx;
+  padding: 14rpx 28rpx 28rpx;
+  box-sizing: border-box;
+}
+.content_Q1{
+  align-items: center;
+}
+.content_Q1_left{
+  width: 160rpx;
+  color: #333333;
+}
+.inputclass{
+  font-size: 24rpx;
+font-family: PingFang SC;
+font-weight: 400;
+color: #999999;
+}
+.yanzheng{
+  height: 60rpx;
+  line-height: 60rpx;
+background: rgba(0, 0, 0, 0);
+border: 1px solid #FF6F2D;
+border-radius: 32rpx;
+padding: 0rpx 16rpx ;
+font-size: 24rpx;
+color: #FF6F2D;
+}
+.btns{
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rpx 28rpx;
+  box-sizing: border-box;
+  margin-top: 100rpx;
+} 
+.btns_left,.btns_right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 282rpx;
+height: 92rpx;
+background: linear-gradient(129deg, #FF6F2D 0%, #FF6F2D 100%);
+border-radius: 46rpx;
+
+}

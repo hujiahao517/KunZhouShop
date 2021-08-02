@@ -1,0 +1,33 @@
+/* pages/view/Tools_and_Services/factory_backstage/bindingWX/bindingWX.wxss */
+.wx{
+  width: 160rpx;
+  height: 160rpx;
+  margin: 194rpx auto 0rpx;
+}
+.text{
+  width: 192rpx;
+height: 44rpx;
+font-size: 32rpx;
+font-weight: 400;
+color: #333333;
+margin-top: 80rpx;
+}
+.text2{
+  font-size: 24rpx;
+font-weight: 400;
+color: #999999;
+margin-top: 16rpx;
+}
+.submit{
+  width: 564rpx;
+height: 92rpx;
+background: linear-gradient(129deg, #FF6F2D 0%, #FF6F2D 100%);
+opacity: 1;
+border-radius: 46rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 28rpx;
+color: #ffffff;
+margin-top: 100rpx;
+}

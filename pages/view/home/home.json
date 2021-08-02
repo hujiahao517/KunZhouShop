@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "tabbar":"../../../tabbarComponent/tabbar",
+    "header":"/pages/common/false_head/false_head",
+    "search":"/pages/common/search/search",
+    "link_and_stroll":"/pages/common/like_and_stroll/like_and_stroll",
+    "goodsList":"/pages/common/goods/goodsList/goodsList"
+  },
+  "navigationStyle": "custom"
+  
+ 
+}

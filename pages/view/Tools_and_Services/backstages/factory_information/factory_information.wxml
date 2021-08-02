@@ -1,0 +1,33 @@
+<!--pages/view/Tools_and_Services/factory_backstage/factory_information/factory_information.wxml-->
+<!-- 此页厂家信息和 网店信息 和厂家申请  公用  厂家 type:1 -->
+<view class="container">
+    <view class="content">
+      <view class="content_Q1">
+          <view class="content_Q1_left">法人信息 <text>*</text></view>
+          <view class="content_Q1_right">
+              <input  type="text" value="嘀嘀嘀"/>
+          </view>
+      </view>
+      <view class="content_Q1">
+          <view class="content_Q1_left">企业信息 <text>*</text></view>
+          <view class="content_Q1_right">
+              <input  type="text" value="某不知名公司"/>
+          </view>
+      </view>
+      <view class="content_Q1">
+          <view class="content_Q1_left">社会信用代码 <text>*</text></view>
+          <view class="content_Q1_right">
+              <input  type="text" value="199999999999999999"/>
+          </view>
+      </view>
+      <view class="content_bottom">
+        <view class="content_bottom_title">营业执照照片</view>
+        <view class="content_bottom_content">
+        
+          <image src="/pages/assets/img/factoryImg/tuadd.png"></image>
+          <!-- <image src="http://image.kunzhousc.com/uploads/2021/0723/de2a9cfebb77fd2c2db43e9e4c101a1a.png"></image> -->
+          <text class="img_text">（正面）*</text>
+        </view>
+      </view>
+    </view>
+</view>

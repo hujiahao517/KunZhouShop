@@ -1,0 +1,7 @@
+<!--pages/view/Tools_and_Services/factory_backstage/bindingWX/bindingWX.wxml-->
+<view class="container">
+    <image class="wx" src="/pages/assets/img/home_img/weixin2.png"></image>
+    <view class="text">尚未绑定微信</view>
+    <view class="text2">可使用微信登录可绑定微信关联</view>
+    <view class="submit">绑定微信</view>
+</view>

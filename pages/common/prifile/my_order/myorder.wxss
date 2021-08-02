@@ -1,0 +1,107 @@
+/* pages/common/prifile/my_order/myorder.wxss */
+.order_box{
+  width: 694rpx;
+  height: 234rpx;
+  background: #FFFFFF;
+  margin: -40px auto 0rpx;
+  border-radius: 16rpx;
+}
+.order_box1{
+  width: 694rpx;
+  background: #FFFFFF;
+  margin: -40px auto 0rpx;
+  border-radius: 16rpx;
+}
+.order_title{
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rpx 28rpx 0rpx 20rpx;
+}
+.order_title_left{
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #000000;
+}
+.order_title_right{
+  display: flex;
+  align-items: center;
+}
+.order_title_right>text{
+  font-size: 20rpx;
+font-weight: 400;
+color: #999999;
+}
+.order_title_right>image{
+  width: 20rpx;
+  height: 20rpx;
+}
+.order_bottom{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.order_bottom_q1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.order_bottom_q2{
+  width: 25%;
+  height: 159rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.order_bottom_q1>image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.order_bottom_q2>image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.order_bottom_q1>text{
+  font-size: 24rpx;
+font-weight: 400;
+color: #333333;
+margin-top: 12rpx;
+}
+.order_bottom_q2>text{
+  font-size: 24rpx;
+font-weight: 400;
+color: #333333;
+margin-top: 12rpx;
+}
+.order_bottom_q1>.icon{
+  width: 28rpx;
+height: 28rpx;
+background: #FF6F2D;
+border: 4rpx solid #FFFFFF;
+border-radius: 50%;
+color: #fff;
+position: absolute;
+top: -26rpx;
+left: 58%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.order_bottom_q2>.icon{
+  width: 28rpx;
+height: 28rpx;
+background: #FF6F2D;
+border: 4rpx solid #FFFFFF;
+border-radius: 50%;
+color: #fff;
+position: absolute;
+top: -26rpx;
+left: 58%;
+display: flex;
+justify-content: center;
+align-items: center;
+}

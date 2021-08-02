@@ -1,0 +1,45 @@
+<!--pages/view/Tools_and_Services/Tools_and_Services.wxml-->
+<!-- 厂家后台 -->
+<view class="container">
+  <view class="jia_header_box">
+    <!-- 假的头部组件 -->
+    <header style="width:100%; "></header>
+    <view class="title">
+      <image bindtap="fanhui" src="/pages/assets/img/profile/iconfanhui.png"></image>
+      <text>厂家</text>
+      <text> </text>
+    </view>
+  </view>
+  <view class="header">
+    <!-- 个人中心头部 -->
+    <view class="newsMy_top">
+      <!-- 头像名字设置手机号 -->
+      <view class="newsMy">
+        <view>
+          <image class="userinfo-avatar" src="http://lg.kunzhousc.com/public/static/merch/moren.png" mode="cover">
+          </image>
+        </view>
+        <view class="newsMy-s">
+          <view class="nesMy-name">
+            <view class="nesMyname-bot">
+              <span>张三</span>
+            </view>
+            <view class="changjia">欢迎进入厂家后台</view>
+          </view>
+          <view class="nesMy-right" bindtap="set">
+            <view class="shezhi" bindtap="shezhi">
+              <image src="/pages/assets/img/profile/icon_shezhi.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 我的订单 -->
+  <myorder type="{{1}}" bind:index="click_order"></myorder>
+  <!-- 厂家后台 -->
+  <backstage type="{{1}}" bind:index="click_navigateTo"></backstage>
+  <!--工具与服务 -->
+  <Tools_and_Services type="{{1}}" bind:index="click_navigateTo"></Tools_and_Services>
+
+</view>

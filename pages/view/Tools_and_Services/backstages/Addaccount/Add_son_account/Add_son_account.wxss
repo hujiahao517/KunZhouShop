@@ -1,0 +1,66 @@
+/* pages/view/Tools_and_Services/backstages/Addaccount/Add_son_account/Add_son_account.wxss */
+.account{
+  width: 694rpx;
+height: 114rpx;
+background: #FFFFFF;
+margin-top: 20rpx;
+padding: 0rpx 28rpx;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+}
+.account_top,.account_bottom{
+  flex: 1;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+.account_top{
+  font-size: 28rpx;
+font-family: PingFang SC;
+font-weight: bold;
+}
+.account_bottom{
+  font-size: 24rpx;
+font-family: PingFang SC;
+}
+.account_bottom>text{
+  margin-left: 32rpx;
+}
+.delect{
+  background-color: #FF6F2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  height: 100%;
+  width: 86rpx;
+}
+.quanxian{
+  width: 694rpx;
+  height: 150rpx;
+  padding: 0rpx 0rpx 0rpx 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.quanxian_Q1{
+  /* width: 33.33%; */
+  font-size: 24rpx !important;
+  display: flex;
+  align-items: center;
+}
+.van-icon van-icon-success{
+  font-size: 24rpx;
+}
+.van-checkbox{
+  /* display: inline-block !important; */
+  margin-right: 20rpx;
+}
+.van-checkbox__label van-checkbox__label--right{
+font-family: PingFang SC;
+font-weight: 400;
+color: #333333;
+}

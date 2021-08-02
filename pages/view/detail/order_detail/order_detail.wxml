@@ -1,0 +1,331 @@
+<!-- 已发货页面 -->
+<view class="content">
+  <!-- 顶部内容 -->
+  <!-- 待发货内容index=2 -->
+  <view class='meuns' wx:if="{{index == 2}}">
+    <image class="meuns_left" src="/pages/assets/img/factoryImg/arrow.png"></image>
+    <!-- 图片区域 -->
+    <image src='/pages/assets/img/network/top_img.png' mode='widthFix' class='top_img'></image>
+    <!-- 需要更换的内容 -->
+    <view class='ordersss'>订单详情</view>
+    <text class='orders'>待发货</text>
+  </view>
+  <!-- 代会员支付index=1 -->
+  <view class='meuns' wx:if="{{index == 1}}">
+    <image class="meuns_left" src="/pages/assets/img/factoryImg/arrow.png"></image>
+    <!-- 图片区域 -->
+    <image src='/pages/assets/img/network/top1_img.png' mode='widthFix' class='top_img'></image>
+    <!-- 需要更换的内容 -->
+    <view class='ordersss'>订单详情</view>
+    <text class='orders'>待会员支付</text>
+  </view>
+  <!-- 已发货详情页,index是3 -->
+  <view class='meuns' wx:if="{{index == 3}}">
+    <image class="meuns_left" src="/pages/assets/img/factoryImg/arrow.png"></image>
+    <!-- 图片区域 -->
+    <image src='/pages/assets/img/network/arrow_right.png' mode='widthFix' class='top_img'></image>
+    <!-- 需要更换的内容 -->
+    <view class='ordersss'>订单详情</view>
+
+    <text class='orders'>已发货</text>
+  </view>
+  <!-- 交易已完成页面index=4 -->
+  <view class='meuns' wx:if="{{index == 4}}">
+    <image class="meuns_left" src="/pages/assets/img/factoryImg/arrow.png"></image>
+    <!-- 图片区域 -->
+    <image src='/pages/assets/img/network/arrow_arrow.png' mode='widthFix' class='top_img'></image>
+    <!-- 需要更换的内容 -->
+    <view class='ordersss'>订单详情</view>
+
+    <text class='orders'>交易已完成</text>
+  </view>
+  <!-- 订单已关闭页面index=5 -->
+  <view class='meuns' wx:if="{{index == 5}}">
+    <image class="meuns_left" src="/pages/assets/img/factoryImg/arrow.png"></image>
+    <!-- 图片区域 -->
+    <image src='/pages/assets/img/network/top1_img.png' mode='widthFix' class='top_img'></image>
+    <!-- 需要更换的内容 -->
+    <view class='ordersss'>订单详情</view>
+    <text class='orders'>订单已关闭</text>
+  </view>
+  <!-- index=6退款成功页面 -->
+  <view class='meuns' wx:if="{{index == 6}}">
+    <image class="meuns_left" src="/pages/assets/img/factoryImg/arrow.png"></image>
+    <!-- 图片区域 -->
+    <image src='/pages/assets/img/network/top4_img.png' class='top_img'></image>
+    <!-- 需要更换的内容 -->
+    <view class='ordersss'>退款详情</view>
+    <text class='orde'>退款成功</text>
+    <view class='order'>2021年6月28日 15:27</view>
+  </view>
+  <!-- 卡片中内容 -->
+  <view class='cards'>
+    <!-- 第一张卡片 -->
+    <view class='card_first' wx:if='{{index==1||index==2||index==3||index==4||index==5}}'>
+      <!-- 左边 -->
+      <view>
+        <image src='/pages/assets/img/factoryImg/place.png' mode="widthFix" class="place_image"></image>
+      </view>
+      <!-- 右边 -->
+      <view class='first_right'>
+        <!-- 上 -->
+        <view class='xinxi'>
+          <view class='xinxi_name'>范加明</view>
+          <view class='xinxi_phone'>15666115586</view>
+        </view>
+        <!-- 下 -->
+        <view class='first_xia'>
+          河北省石家庄市裕华区体育南大街与槐安路交叉口南行50米
+        </view>
+      </view>
+    </view>
+    <view class='card_firsts' wx:if='{{index==6}}'>
+      <view class='firstsss'>
+        <view class='mon'>退款总金额</view>
+        <view class='cards_money'>
+          <view class='second_code'>¥</view>
+          <view class='second_money'>28.00</view>
+        </view>
+      </view>
+      <view class='secondss'>
+        <image src='/pages/assets/img/factoryImgarrow1.png' mode="widthFix" style='width:20rpx;'></image>
+        <view class='lingqina'>原路退回微信零钱</view>
+        <view class='kan'>（查看微信零钱）</view>
+      </view>
+    </view>
+    <!-- 第二章卡片 -->
+    <view class='card_second'>
+      <!-- 名称区域 -->
+      <view class='avatar'>
+        <image src='http://lg.kunzhousc.com/public/static/merch/moren.png' mode='widthFix' class='store_avatar'></image>
+        <view class='avatar_name'>怡情姿旗舰店</view>
+      </view>
+      <!-- 中间线条区域 -->
+      <view class='store'></view>
+      <!-- 图片和标题 -->
+      <view class='img_name'>
+        <!-- 左边图片 -->
+        <view class='card_secondImg'>
+          <image src='http://image.kunzhousc.com/uploads/2021/0723/7bc86d735b339e1e3c34cada4a13a0a5.png'
+            class='img_nameImage'></image>
+        </view>
+        <!-- 中间标题 -->
+        <view class='imgs_center'>
+          <view class='card_name'>免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class='card_content'>规格：150ml</view>
+        </view>
+        <!-- 右侧内容 -->
+        <view class='card_secondRight'>
+          <view class='cards_money'>
+            <view class='second_code'>¥</view>
+            <view class='second_money'>28.00</view>
+          </view>
+          <view class='second_number'>x1</view>
+        </view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==1||index==2||index==3||index==4||index==5}}'></view>
+      <!-- 价格 -->
+      <view class='second_price' wx:if='{{index==2||index==3||index==4}}'>
+        <view>
+          共一件，实际支付<text class='prices'>¥28.00</text>元
+        </view>
+        <view class='second_fare' wx:if='{{index==3}}'>(运费:0.00元)</view>
+      </view>
+      <view class='second_price' wx:if='{{index==1||index==5}}'>
+        <view>
+          共一件商品，需买家支付<text class='prices'>¥28.00</text>元
+        </view>
+        <view class='second_fare' wx:if='{{index==3}}'>(运费:0.00元)</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==1||index==2||index==3||index==4||index==5}}'></view>
+      <view class='store' wx:if="{{index==6}}"></view>
+      <!-- 退款原因 -->
+
+      <view class='second_bianhao' wx:if="{{index==6}}">
+        <view class='bianhao'>退款原因</view>
+        <view class='bianma'>拍错/不喜欢/效果差</view>
+      </view>
+      <view class='store' wx:if="{{index==6}}"></view>
+
+      <!-- 退款金额 -->
+      <view class='second_bianhao' wx:if="{{index==6}}">
+        <view class='bianhao'>退款金额</view>
+        <view class='bianma'>￥28.00</view>
+      </view>
+      <view class='store' wx:if="{{index==6}}"></view>
+
+      <!-- 申请数件 -->
+      <view class='second_bianhao' wx:if="{{index==6}}">
+        <view class='bianhao'>申请数件</view>
+        <view class='bianma'>1</view>
+      </view>
+      <view class='store' wx:if="{{index==6}}"></view>
+      <!-- 申请时间 -->
+      <view class='second_bianhao' wx:if="{{index==6}}">
+        <view class='bianhao'>申请时间</view>
+        <view class='bianma'>2021-06-27 10:00:40</view>
+      </view>
+      <view class='store' wx:if="{{index==6}}"></view>
+      <!-- 退款编号 -->
+      <view class='second_bianhao' wx:if="{{index==6}}">
+        <view class='bianhao'>退款编号</view>
+        <view class='bianma'>20210627585555455</view>
+        <view class='copy'>复制</view>
+
+      </view>
+
+      <!-- 退款按钮 -->
+      <view class='second_btn' wx:if='{{index==3}}'>
+        退货/换货
+      </view>
+      <view class='scores' wx:if='{{index==3}}'></view>
+      <!-- 订单编号 -->
+      <!-- 这是index等于3的时候 -->
+      <view class='second_bianhao' wx:if="{{index==3}}">
+        <view class='bianhao'>订单编号</view>
+        <view class='bianma'>20210627585555455</view>
+        <view class='copy'>复制</view>
+      </view>
+      <view class='second_bianhao' wx:if="{{index==5}}">
+        <view class='bianhao'>订单编号</view>
+        <view class='bianma'>20210627585555455</view>
+      </view>
+
+      <!--  -->
+      <view class='second_bianhao' wx:if="{{index==1||index==2||index==4}}">
+        <view class='bianhao'>订单编号</view>
+        <view class='bianma'>20210627585555455</view>
+        <view class='copys'>复制</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store'></view>
+      <!-- 快递单号 -->
+      <view class='second_bianhao' wx:if='{{index==3}}'>
+        <view class='bianhao'>快递单号</view>
+        <view class='bianma'>13641414141412541</view>
+        <view class='copy'>复制</view>
+      </view>
+      <view class='second_bianhao' wx:if='{{index==4}}'>
+        <view class='bianhao'>快递单号</view>
+        <view class='bianma'>13641414141412541</view>
+        <view class='copys'>复制</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==3||index==4}}'></view>
+      <!-- 物流公司 -->
+      <view class='second_bianhao' wx:if='{{index==3||index==4}}'>
+        <view class='bianhao'>物流公司</view>
+        <view class='bianma'>韵达快递</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==3||index==4}}'></view>
+      <!-- 创建时间 -->
+      <view class='second_bianhao' wx:if='{{index==3||index==5||index==2||index==1}}'>
+        <view class='bianhao'>创建时间</view>
+        <view class='bianma'>2021-06-27 10:00:40</view>
+      </view>
+      <!-- 下单时间 -->
+      <view class='second_bianhao' wx:if='{{index==4}}'>
+        <view class='bianhao'>下单时间</view>
+        <view class='bianma'>2021-06-27 10:00:40</view>
+      </view>
+      <view class='store' wx:if='{{index==4||index==2||index==1}}'></view>
+
+      <!-- 发货时间 -->
+      <view class='second_bianhao' wx:if='{{index==4}}'>
+        <view class='bianhao'>发货时间</view>
+        <view class='bianma'>2021-06-27 10:02:35</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==3||index==4||index==5}}'></view>
+      <!-- 付款时间 -->
+      <view class='second_bianhao' wx:if='{{index==3||index==2||index==4}}'>
+        <view class='bianhao'>付款时间</view>
+        <view class='bianma'>2021-06-27 10:02:35</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==3||index==2||index==4}}'></view>
+      <!-- 付款方式 -->
+      <view class='second_bianhao' wx:if='{{index==3||index==2}}'>
+        <view class='bianhao'>付款方式</view>
+        <view class='bianma'>零钱</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==3||index==2}}'></view>
+      <!-- 获利方式 -->
+      <view class='second_bianhao' wx:if='{{index==3||index==2||index==4}}'>
+        <view class='bianhao'>获利方式</view>
+        <view class='bianma'>零钱9.49</view>
+      </view>
+      <!-- 分割线 -->
+      <view class='store' wx:if='{{index==3||index==4||index==2}}'></view>
+    </view>
+    <!--第三章卡片 -->
+    <!-- 退货物流信息 -->
+    <view class='card_third' wx:if='{{index == 3}}'>
+      <!-- 左边 -->
+      <view>
+        <image src='/pages/assets/img/factoryImg/shopping_car.png' mode='widthFix' class='third_img'></image>
+      </view>
+      <!-- 右边 -->
+      <view class='third_right'>
+        <view class='third_logistics'>退货物流：中通快递 75488995851061</view>
+        <view class='third_place'>【商家地址】河北省石家庄市裕华区 体育南大街 电视塔集团 15633445090</view>
+        <view class='third_time'>2021-06-27 10:00:40</view>
+      </view>
+    </view>
+    <!-- 交易完成卡片 -->
+    <view class='card_thirds' wx:elif='{{index==4||index==2}}'>
+      <view class='maijia'>买家信息</view>
+      <view class='huiyuan'>
+        <view>会员:</view>
+        <view class='huiyuan_number'>17631140407</view>
+      </view>
+      <view class='maijai_liuyan'>买家留言：</view>
+      <view class='liuyan'>
+        河北省 石家庄 新华区 天苑街道 联盟路 东三庄南区 北门 4-1-2201
+      </view>
+    </view>
+    <!-- 底部内容 -->
+    <!--  -->
+    <view class='pages_bottoxm' wx:if='{{index==3}}'>
+      <view class='bottoms'>发货提醒</view>
+      <view class='bottoms'>联系网点</view>
+      <view class='bottoms'>联系会员</view>
+      <view class='bottoms'>修改物流</view>
+      <view class='bottoms'>查看物流</view>
+    </view>
+    <!-- 交易已完成内容 -->
+    <view class='pages_bottoxm' wx:if='{{index==4}}'>
+      <view class='bottoms'>联系网点</view>
+      <view class='bottoms'>联系会员</view>
+    </view>
+    <!-- 待会员支付页面 -->
+    <view class='pages_bottoxm' wx:if='{{index==1}}'>
+      <view class='bottoms'>联系网点</view>
+      <view class='bottoms'>联系会员</view>
+      <view class='bottoms'>催付</view>
+      <view class='bottoms'>关闭订单</view>
+    </view>
+    <!-- 待发货页面 -->
+    <view class='pages_bottoxm' wx:if='{{index==2}}'>
+      <view class='bottoms'>核对地址</view>
+      <view class='bottoms'>联系网点</view>
+      <view class='bottoms'>联系会员</view>
+      <view class='bottoms'>修改收货地址</view>
+      <view class='bottoms'>发货</view>
+    </view>
+    <view class='pages_bottoxm' wx:if='{{index==5}}'>
+      <view class='bottoms'>删除记录</view>
+    </view>
+    <!--  -->
+    <view class='pages_bottoxm' wx:if='{{index==6}}'>
+      <view class='bottoms'>拨打电话</view>
+
+      <view class='bottoms'>联系会员</view>
+    </view>
+
+  </view>
+</view>

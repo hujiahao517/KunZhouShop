@@ -1,0 +1,138 @@
+/* pages/view/Tools_and_Services/backstages/shop_edit/add_guige/add_guige.wxss */
+.title {
+  width: 694rpx;
+  height: 88rpx;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  padding: 0rpx 12rpx;
+  box-sizing: border-box;
+  margin: 20rpx  auto 0rpx;
+}
+input{
+  text-align: center;
+  color: #FF6F2D;
+  font-size: 24rpx;
+}
+.title_left {
+  width: 226rpx;
+  padding-right: 42rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.content_q1 {
+  width: 694rpx;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  padding: 24rpx 28rpx 24rpx 18rpx;
+  box-sizing: border-box;
+  margin: 40rpx auto 0rpx;
+  display: flex;
+}
+
+.content_q1_left {
+  width: 198rpx;
+  display: flex;
+  justify-content: space-around;
+  margin: 10rpx 0rpx;
+}
+
+.cha {
+  width: 48rpx;
+  height: 48rpx;
+  /* margin: 10rpx 0rpx; */
+}
+
+.cha_input {
+  width: 92rpx;
+  height: 42rpx;
+  background: #FFFFFF;
+  border: 1rpx solid #FF6F2D;
+  opacity: 1;
+  border-radius: 8rpx;
+  /* margin: 10rpx 0rpx; */
+}
+
+.content_q1_right {
+  flex: 1;
+  display: flex;
+  padding: 0rpx 0rpx 0rpx 66rpx;
+  justify-content: space-between;
+}
+
+.content_q1_right_left {
+  display: flex;
+  width: 348rpx;
+  flex-wrap: wrap;
+}
+.cha_input2_box{
+  width: 92rpx;
+  height: 42rpx;
+  border: 1rpx solid #FF6F2D;
+  opacity: 1;
+  border-radius: 8rpx;
+  margin: 10rpx 10rpx;
+  position: relative;
+}
+.cha_input2 {
+  /* width: 92rpx;
+  height: 42rpx; */
+  width: 90rpx;
+  height: 40rpx;
+}
+.xiao_cha{
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  top: -15rpx;
+  right: -15rpx;
+  z-index: 2;
+}
+.content_q1_right_right{
+  width: 48rpx;
+  height: 48rpx;
+}
+.content_q1_right_right_image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-top: 10rpx;
+}
+.btns{
+  padding: 0rpx  80rpx 0rpx 96rpx;
+  display: flex;
+  color: #FFFFFF;
+  font-size: 32rpx;
+  justify-content: space-between;
+  margin-top: 100rpx;
+}
+.btns_left,.btns_right{
+  width: 270rpx;
+  height: 88rpx;
+  background: linear-gradient(129deg, #FF6F2D 0%, #FF6F2D 100%);
+opacity: 1;
+border-radius: 46rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns_right{
+  width: 264rpx;
+height: 88rpx;
+}

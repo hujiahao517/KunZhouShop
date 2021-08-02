@@ -1,0 +1,52 @@
+<!--pages/view/Tools_and_Services/backstages/Addaccount/Add_son_account/Add_son_account.wxml-->
+<view class="container">
+<view>
+  <van-swipe-cell right-width="{{ 65 }}" >
+  <van-cell-group>
+    <view class="account">
+    <view class="account_top">张三</view>
+    <view class="account_bottom">子账号 <text>17733642264</text></view>
+  </view>
+  </van-cell-group>
+  <view class="delect" bindtap="delect" slot="right">删除</view>
+</van-swipe-cell>
+  <view class="quanxian">
+    <view class="quanxian_Q1">
+        <van-checkbox value="{{ checked }}" checked-color="#FF6F2D" bind:change="onChange">
+          添加商品授权
+        </van-checkbox>
+    </view>
+    <view class="quanxian_Q1">
+        <van-checkbox value="{{ checked }}" checked-color="#FF6F2D" bind:change="onChange">
+          拣货授权
+        </van-checkbox>
+        
+    </view>
+    <view class="quanxian_Q1">
+        <van-checkbox value="{{ checked }}" checked-color="#FF6F2D" bind:change="onChange">
+          上架授权
+        </van-checkbox>
+        
+    </view>
+    <view class="quanxian_Q1">
+        <van-checkbox value="{{ checked }}" checked-color="#FF6F2D" bind:change="onChange">
+          订单授权
+        </van-checkbox>
+        
+    </view>
+    <view class="quanxian_Q1">
+        <van-checkbox value="{{ checked }}" checked-color="#FF6F2D" bind:change="onChange">
+          推广授权
+        </van-checkbox>
+        
+    </view>
+    <view class="quanxian_Q1">
+        <van-checkbox value="{{ checked }}" checked-color="#FF6F2D" bind:change="onChange" data-item="{{checked}}">
+          统计授权
+        </van-checkbox>
+        
+    </view>
+  </view>
+</view>
+<view class="determine">确定</view>
+</view>

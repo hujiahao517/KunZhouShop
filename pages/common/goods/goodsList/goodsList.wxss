@@ -1,0 +1,14 @@
+/* pages/common/goods/goodsList/goodsList.wxss */
+.goods {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rpx 28rpx;
+  box-sizing: border-box;
+}
+
+.goodsListItem {
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  width: 50%;
+}

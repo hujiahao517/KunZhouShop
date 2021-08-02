@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tabbar":"../../../tabbarComponent/tabbar",
+    "header":"/pages/common/false_head/false_head",
+    "myorder":"/pages/common/prifile/my_order/myorder",
+    "Tools_and_Services":"/pages/common/prifile/Tools_and_Services/Tools_and_Services"
+  },
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationStyle": "custom"
+}

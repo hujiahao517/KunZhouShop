@@ -1,0 +1,53 @@
+<!--pages/common/goods/goodsListItem/goodsListItem.wxml-->
+<!-- 次组件是商品单个 -->
+<view class="goodsListItem">
+  <image class="goodsListItem_topImg"
+    src="http://image.kunzhousc.com/uploads/2021/0723/7bc86d735b339e1e3c34cada4a13a0a5.png"></image>
+  <view class="goodsListItem_Text">
+    <view class="goodsListItem_Text_q1">
+      <image class="goodsListItem_Text_imgicon" src="/pages/assets/img/home_img/icon_new.png"></image>
+    <text class="goodsListItem_Text_text">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</text>
+    </view>
+  
+    <view class="goodsListItem_Texe_pricebox">
+      <view class="goodsListItem_Texe_pricebox_left">
+        <text class="goodsListItem_Texe_pricebox_left_icon">￥</text>
+        <text class="goodsListItem_Texe_pricebox_left_price">28.00</text>
+      </view>
+      <view class="goodsListItem_Texe_pricebox_right">
+        <text class="goodsListItem_Texe_pricebox_right_left">怡情姿旗舰店</text>
+        <image class="goodsListItem_Texe_pricebox_right_right"
+          src="/pages/assets/img/home_img/icon_right.png"
+        ></image>
+      </view>
+    </view>
+    <!--奖励 銷量那个盒子 -->
+    <view class="reward_box">
+      <view class="reward_box_left">任选其中一种作为奖励</view>
+      <view class="reward_box_right">销量 600+</view>
+    </view>
+    <!-- 抽奖 -->
+    <view class="choujiangbox">
+      <view class="choujiangbox_q1">
+        <image src="/pages/assets/img/home_img/xianJin.png"></image>
+        <view class="choujiangbox_q1_Text">现金 <text class=" choujiangbox_q1_Text_icon">21.60</text> 元</view>
+      </view>
+      <view class="choujiangbox_q1">
+        <image src="/pages/assets/img/home_img/lingqian.png"></image>
+        <view class="choujiangbox_q1_Text">零钱 <text class=" choujiangbox_q1_Text_icon">9.49</text> 元</view>
+      </view>
+      <view class="choujiangbox_q1">
+        <image src="/pages/assets/img/home_img/jifen.png"></image>
+        <view class="choujiangbox_q1_Text">积分 <text class=" choujiangbox_q1_Text_icon">12.18</text> 元</view>
+      </view>
+      <view class="choujiangbox_q1">
+        <image src="/pages/assets/img/home_img/jiangli.png"></image>
+        <view class="choujiangbox_q1_Text">奖励 <text class=" choujiangbox_q1_Text_icon"></text>商品</view>
+      </view>
+      <view class="choujiangbox_q1">
+        <image src="/pages/assets/img/home_img/choujiang.png"></image>
+        <view class="choujiangbox_q1_Text">抽奖 <text class=" choujiangbox_q1_Text_icon"> </text> </view>
+      </view>
+    </view>
+  </view>
+</view>

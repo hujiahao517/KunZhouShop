@@ -1,0 +1,23 @@
+<!--pages/view/Tools_and_Services/factory_backstage/SheZhi/SheZhi.wxml-->
+<!-- 设置页 -->
+<view class="container">
+  <view class="content">
+    <view class="name" bindtap="click_factory_info">
+      <text class="name_left">厂家信息</text>
+      <image src="/pages/assets/img/home_img/icon_right.png"></image>
+    </view>
+    <view class="name" bindtap="click_addaccount">
+      <text class="name_left">添加子账号</text>
+      <image src="/pages/assets/img/home_img/icon_right.png"></image>
+    </view>
+    <view class="name" bindtap="click_backcard">
+      <text class="name_left">添加银行卡</text>
+      <image src="/pages/assets/img/home_img/icon_right.png"></image>
+    </view>
+    <view class="name" bindtap="click_bindingWX">
+      <text class="name_left">绑定微信<text class="isbangding">（未绑定）</text>
+      </text>
+      <image src="/pages/assets/img/home_img/icon_right.png"></image>
+    </view>
+  </view>
+</view>

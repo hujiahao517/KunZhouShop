@@ -1,0 +1,11 @@
+<!--pages/common/backstage/backstage.wxml-->
+  <!-- 厂家后台 type：1 --> 
+  <view class="factory_backstage">
+    <view class="factory_backstage_title" wx:if="{{type == 1}}">厂家后台</view>
+    <view class="factory_backstage_bottom">
+      <view class="factory_backstage_bottom_q1" wx:if="{{type == 1}}" wx:for="{{factory_backstage}}" wx:key="index" bindtap="click_navigateTo" data-itme="{{item}}">
+        <image src="{{item.img}}"></image>
+        <text >{{item.text}}</text>
+      </view>
+    </view>
+  </view>

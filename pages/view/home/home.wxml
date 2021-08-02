@@ -1,0 +1,121 @@
+<!--pages/view/home/home.wxml-->
+<view class="container">
+  <view class="jia_header_box">
+    <!-- 假的头部组件 -->
+    <header style="width:100%; "></header>
+    <!-- logo -->
+    <view class="title">
+      <image class="title_img" src="/pages/assets/img/home_img/logo.png"></image>
+    </view>
+
+    <!-- 搜索 -->
+    <search></search>
+  </view>
+  <view class="header_box">
+    <!-- 轮播 -->
+    <view class="page_section">
+      <swiper autoplay="true" interval="5000" circular="true" class="newswipe">
+        <block wx:for="{{5}}" wx:for-item="item" wx:key="item">
+          <swiper-item>
+            <image class="lunbo_image"
+              src="http://image.kunzhousc.com/uploads/2021/0723/de2a9cfebb77fd2c2db43e9e4c101a1a.png"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <!-- 通知栏 -->
+  <view class="notice" style="height: 38px;">
+    <view class="notice_left">
+      <image class="notice_left_img" src="/pages/assets/img/home_img/notice_img.png"></image>
+    </view>
+    <view class="notice_right">
+      <view class="swiper">
+        <swiper class="swiper" autoplay="true" circular="true" vertical="true">
+          <block wx:for="{{5}}" wx:key="index">
+            <swiper-item>
+              <view class="swiper-item">会员177****6704消费26300.00中奖3767.30</view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+
+  <!-- 分类区  低价、零钱、积分、网点、。。。 -->
+  <view class="class_area">
+    <view class="class_area_lowprice">
+      <image class="class_area_lowprice_img" src="/pages/assets/img/home_img/lowprice.png"></image>
+      <text class="class_area_lowprice_text">低价区</text>
+    </view>
+    <view class="class_area_lowprice">
+      <image class="class_area_lowprice_img" src="/pages/assets/img/home_img/smallchange.png"></image>
+      <text class="class_area_lowprice_text">零钱区</text>
+    </view>
+    <view class="class_area_lowprice">
+      <image class="class_area_lowprice_img" src="/pages/assets/img/home_img/integral.png"></image>
+      <text class="class_area_lowprice_text">积分区</text>
+    </view>
+    <view class="class_area_lowprice">
+      <image class="class_area_lowprice_img" src="/pages/assets/img/home_img/network.png"></image>
+      <text class="class_area_lowprice_text">网点入驻</text>
+    </view>
+    <view class="class_area_lowprice">
+      <image class="class_area_lowprice_img" src="/pages/assets/img/home_img/factory.png"></image>
+      <text class="class_area_lowprice_text">厂家入驻</text>
+    </view>
+    <view class="class_area_lowprice">
+      <image class="class_area_lowprice_img" src="/pages/assets/img/home_img/onlinestores.png"></image>
+      <text class="class_area_lowprice_text">网店入驻</text>
+    </view>
+    <view class="class_area_lowprice">
+      <image class="class_area_lowprice_img" src="/pages/assets/img/home_img/promoters.png"></image>
+      <text class="class_area_lowprice_text">推广员入驻</text>
+    </view>
+  </view>
+  <!-- 每日逛 -->
+  <link_and_stroll type="{{1}}"> </link_and_stroll>
+
+  <view class="guanggao_box">
+    <!-- 广告位置 -->
+    <view class="guanggao_img">
+      <view class="guanggao_imgs">
+        <view class="guanggao_imgq1" wx:for="{{5}}" wx:fot-item="item" wx:key="item">
+          <image src="http://image.kunzhousc.com/uploads/2021/0723/de2a9cfebb77fd2c2db43e9e4c101a1a.png"
+            class="guanggao_imgtu"></image>
+        </view>
+      </view>
+    </view>
+    <!-- 广告视频 -->
+    <view class="guanggao_img">
+      <view class="guanggao_imgs">
+        <view class="guanggao_imgq1" bindtap="videoClick" data-item="{{item.video}}" wx:for="{{5}}" wx:fot-item="item"
+          wx:key="item">
+          <image src="http://image.kunzhousc.com/uploads/2021/0723/de2a9cfebb77fd2c2db43e9e4c101a1a.png"
+            class="guanggao_imgtu">
+            <view class="guanggao_zhezhao">
+              <image class="guanggao_zhezhao_img" src="/pages/assets/img/home_img/bofang.png"></image>
+            </view>
+          </image>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- 猜你喜欢 -->
+  <link_and_stroll type="{{2}}"> </link_and_stroll>
+
+  <goodsList class="goods"></goodsList>
+
+  <view wx:for="{{50}}">
+    5
+  </view>
+
+
+
+
+
+
+
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

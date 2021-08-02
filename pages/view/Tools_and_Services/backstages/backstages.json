@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "header":"/pages/common/false_head/false_head",
+    "myorder":"/pages/common/prifile/my_order/myorder",
+    "backstage":"/pages/common/backstage/backstage",
+    "Tools_and_Services":"/pages/common/prifile/Tools_and_Services/Tools_and_Services"
+  },
+  "navigationStyle": "custom"
+}

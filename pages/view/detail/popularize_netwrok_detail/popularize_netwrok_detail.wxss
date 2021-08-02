@@ -1,0 +1,140 @@
+/* pages/promote/promote.wxss */
+.promote_content{ 
+  width: 750rpx;
+background: #F4F4F4;
+opacity: 1;
+}
+.promote_search{
+  width: 750rpx;
+height: 88rpx;
+background: #FFFFFF;
+opacity: 1;
+display: flex;
+align-items: center;
+}
+.search_img{
+  width:48rpx;
+  height:48rpx;
+  margin-left:28rpx;
+}
+.promote_input{
+  width: 468rpx;
+  height: 64rpx;
+  background: #FFFFFF;
+  border: 2rpx solid #FF6F2D;
+  opacity: 1;
+  border-radius: 40rpx;
+  font-size: 24rpx;
+font-family: PingFang SC;
+font-weight: 500;
+line-height: 30rpx;
+color: #999999;
+padding-left:28rpx;
+margin-left:18rpx;
+box-sizing: border-box;
+}
+.search_sure{
+  text-align: center;
+  width: 132rpx;
+  height: 46rpx;
+  background: #FF6F2D;
+  opacity: 1;
+  border-radius: 28rpx;
+  font-size: 24rpx;
+font-family: PingFang SC;
+font-weight: 500;
+line-height: 46rpx;
+color: #FFFFFF;
+opacity: 1;
+margin-left:26rpx;
+}
+.promote_container{
+width: 694rpx;
+background: #FFFFFF;
+opacity: 1;
+border-radius: 16px;
+margin:32rpx auto;
+padding:28rpx;
+box-sizing: border-box;
+display: flex;
+}
+.promote_avatar{
+  width:80rpx;
+  height:80rpx;
+}
+/* .rihgt_center{
+  height:280rpx;
+  overflow: hidden;
+} */
+.promote_right{
+   margin-left:18rpx;
+}
+.right_top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.number_store{
+  font-size: 28rpx;
+font-family: PingFang SC;
+font-weight: bold;
+line-height: 40rpx;
+color: #333333;
+opacity: 1;
+}
+.right_store{
+  width: 112rpx;
+height: 36rpx;
+border: 1px solid #FF6F2D;
+opacity: 1;
+border-radius: 28rpx;
+font-size: 20rpx;
+font-family: PingFang SC;
+font-weight: 500;
+line-height: 36rpx;
+color: #FF6F2D;
+text-align: center;
+opacity: 1;
+margin-left:264rpx;
+}
+.avatars{
+  width:112rpx;
+  height:112rpx;
+}
+.imgs{
+  display: flex;
+  margin-top:24rpx;
+}
+.details{
+  margin-left:22rpx;
+}
+.text{
+  width: 362rpx;
+height: 62rpx;
+font-size: 20rpx;
+font-family: PingFang SC;
+font-weight: 400;
+line-height: 28rpx;
+color: #000000;
+opacity: 1;
+}
+
+.number{
+  font-size: 16rpx;
+font-family: PingFang SC;
+font-weight: 400;
+line-height: 22rpx;
+color: #999999;
+opacity: 1;
+display: flex;
+justify-content: flex-end;
+}
+.arrow_bottoms{
+   display: flex;
+   justify-content: flex-end;
+   margin-top:60rpx;
+}
+.arrow_bottom{
+  width:48rpx;
+  height: 48rpx;
+}

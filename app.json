@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/view/home/home",
+    "pages/view/Tools_and_Services/backstages/shop_edit/add_guige/add_guige",
+
+    "pages/view/Tools_and_Services/backstages/shop_edit/shop_edit",
+    "pages/view/Tools_and_Services/backstages/Addaccount/Addaccount",
+    "pages/view/Tools_and_Services/backstages/My_order/My_order",
+    "pages/view/Tools_and_Services/backstages/addBackcard/addBackcard",
+    "pages/view/Tools_and_Services/backstages/factory_information/factory_information",
+    "pages/view/Tools_and_Services/backstages/SheZhi/SheZhi",
+    "pages/view/Tools_and_Services/backstages/backstages",
+    "pages/view/profile/profile",
+    "pages/view/logo/logo",
+    "pages/view/message/message",
+    "pages/view/category/category",
+    "pages/view/Tools_and_Services/backstages/bindingWX/bindingWX",
+    "pages/view/Tools_and_Services/backstages/Addaccount/Add_son_account/Add_son_account",
+    "pages/view/Tools_and_Services/backstages/Addshop/Addshop",
+    "pages/view/Tools_and_Services/backstages/Put_on/Put_on",
+    "pages/view/detail/order_detail/order_detail",
+    "pages/view/Tools_and_Services/ToolsServices/popularize_netwrok/popularize_netwrok",
+    "pages/view/detail/popularize_netwrok_detail/popularize_netwrok_detail",
+    "pages/view/Tools_and_Services/ToolsServices/network_history/network_history",
+    "pages/view/Tools_and_Services/backstages/Addshop/add_shop_list/add_shop_list",
+    "pages/view/Tools_and_Services/backstages/channel_management/channel_management"
+   
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F9521F",
+    "navigationBarTitleText": ""
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#F9521F",
+    "list": [
+      {
+        "pagePath": "pages/view/home/home",
+        "text": "首页",
+        "iconPath": "/pages/assets/img/tabImg/home.png",
+        "selectedIconPath": "/pages/assets/img/tabImg/homeSelect.png"
+      },
+      {
+        "pagePath": "pages/view/category/category",
+        "text": "分类",
+        "iconPath": "/pages/assets/img/tabImg/category.png",
+        "selectedIconPath": "/pages/assets/img/tabImg/category_select.png"
+      },
+      {
+        "pagePath": "pages/view/message/message",
+        "text": "消息",
+        "iconPath": "/pages/assets/img/tabImg/message.png",
+        "selectedIconPath": "/pages/assets/img/tabImg/message_select.png"
+      },
+      {
+        "pagePath": "pages/view/profile/profile",
+        "text": "我的",
+        "iconPath": "/pages/assets/img/tabImg/profile.png",
+        "selectedIconPath": "/pages/assets/img/tabImg/profile_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

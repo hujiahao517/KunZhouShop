@@ -1,0 +1,50 @@
+<!--pages/promote/promote.wxml-->
+<!-- 推广网点 -->
+<view>
+  <view class='promote_content'>
+       <!-- 搜索框 -->
+       <view class='promote_search'>
+        <image src='/pages/assets/img/icon/search.png' class='search_img'></image>
+        <!--  -->
+        <view>
+           <input type="text" placeholder="请输入您要搜索的网点" class='promote_input'/>
+        </view> 
+        <view class='search_sure' bindtap='record'>网点记录</view>
+     </view>
+     <!-- 内容 -->
+     <view class='promote_content'>
+        <view class='promote_container'>
+          <!-- 左边内容 -->
+           <view>
+             <image src='http://lg.kunzhousc.com/public/static/merch/moren.png' class='promote_avatar'></image>
+           </view>
+           <!-- 右边内容 -->
+           <view class='promote_right'>
+             <view class='right_top'>
+               <view class='number_store'>29号网点</view>
+               <view class='right_store'>联系网点</view>
+             </view>
+             <view class='rihgt_center'>
+                <view wx:for='{{arrow ? 2 : arr}}' wx:for-item='item' wx:for-index='index' wx:for-key='key' wx:key='key' class='imgs'>
+                  <!-- 左边图片 -->
+                  <image src='{{arr[index].img}}' class='avatars'></image>
+                  <!-- 右边详情 -->
+                  <view class='details'>
+                    <view class='text'>{{arr[index].text}}</view>
+                    <view class='number'>共售 {{arr[index].number}}个</view>
+                  </view>
+                </view>
+             </view>
+             <!-- 箭头 -->
+             <view class='arrow_bottoms' bindtap='arrow'>
+               <!-- 下箭头 -->
+               <image src='/pages/assets/img/icon/arrow_bottom.png' class='arrow_bottom' wx:if='{{arrow}}'></image>
+               <!-- 上箭头 -->
+               <image src='/pages/assets/img/icon/arrow_top.png' class='arrow_bottom' wx:else></image>
+               <!--  -->
+             </view>
+           </view>
+        </view>
+     </view>
+  </view>
+</view>

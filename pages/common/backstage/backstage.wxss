@@ -1,0 +1,37 @@
+/* pages/common/backstage/backstage.wxss */
+/* 厂家后台 */
+.factory_backstage {
+  width: 694rpx;
+  height: 258rpx;
+  background: #FFFFFF;
+  opacity: 1;
+  border-radius: 16rpx;
+  margin: 40rpx auto 0rpx;
+}
+
+.factory_backstage_title {
+  padding: 26rpx 0rpx 0rpx 20rpx;
+  font-size: 28rpx;
+
+  font-weight: bold;
+  color: #000000;
+}
+.factory_backstage_bottom{
+  margin-top: 40rpx;
+  display: flex;
+}
+.factory_backstage_bottom_q1{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.factory_backstage_bottom_q1>image{
+  width: 72rpx;
+  height: 72rpx;
+}
+.factory_backstage_bottom_q1>text{
+  font-size: 24rpx;
+color: #333333;
+margin-top: 21rpx;
+}

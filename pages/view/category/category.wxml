@@ -1,0 +1,6 @@
+<!--pages/view/category/category.wxml-->
+<view class="container">
+  
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
+

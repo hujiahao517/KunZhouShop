@@ -1,0 +1,941 @@
+<!--pages/view/Tools_and_Services/factory_backstage/My_order/My_order.wxml-->
+<!-- 我的订单页 -->
+<!-- type=0 会员 type=1 厂家  -->
+<view class="container">
+  <view class="jiavantabs"></view>
+  <van-tabs class="vantabs" id="tabs" active="{{ index }}" bind:change="onChange">
+    <van-tab title="{{item}}" wx:for="{{tab_type1}}"></van-tab>
+  </van-tabs>
+
+  <!-- 待付款 订单 -->
+  <view class="content_Q1" wx:if="{{index == 1}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">待付款</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center" bindtap="click_order_detail">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli" wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">催付</view>
+        <view class="btn">关闭订单</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_left"></view>
+      <view class="more_right">
+        <view class="btn">联系网点</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+  <!-- 待发货 订单 -->
+  <view class="content_Q1" wx:if="{{index == 2}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">待发货</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli" wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">发货</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">修改收货地址</view>
+        <view class="btn2">核对地址</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+  <!-- 待发货/退款中 订单 -->
+  <view class="content_Q1" wx:if="{{index == 2}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">待发货/会员申请退款</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli" wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">发货</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">同意退款</view>
+        <view class="btn2">修改收货地址</view>
+        <view class="btn2">核对地址</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+  <!-- 已发货 -->
+  <view class="content_Q1" wx:if="{{index == 3}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已发货</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli" wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">修改物流</view>
+        <view class="btn2">发货提醒</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+  <!-- 已发货/退款不退货的时候 订单 -->
+  <view class="content_Q1" wx:if="{{index == 3}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已发货/退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli" wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">修改物流</view>
+        <view class="btn2">拒绝退款</view>
+        <view class="btn2">同意退款</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+   <!--已发货/退货退款中 订单 -->
+   <view class="content_Q1" wx:if="{{index == 3}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已发货/退货退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">修改物流</view>
+        <view class="btn2">拒绝退货</view>
+        <view class="btn2">同意退货</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+   <!--点击了同意退货后  已发货/退货退款中 订单 -->
+   <view class="content_Q1" wx:if="{{index == 3}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已发货/退货退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">确认退货收货</view>
+        <view class="btn2">修改物流</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+   <!--点击了确认退货收货后  已发货/退货退款中 订单 -->
+   <view class="content_Q1" wx:if="{{index == 3}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已发货/退货退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">修改物流</view>
+        <view class="btn2">确认退货收货</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+   <!--点击了确认退货收货后  已发货/退货退款中 订单 -->
+   <view class="content_Q1" wx:if="{{index == 3}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已发货/退货退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">修改物流</view>
+        <view class="btn2">拒绝退款</view>
+        <view class="btn2">同意退款</view>
+      </view>
+    </view>
+    <!-- 时间 -->
+    <view class="data">*该订单将于24个小时以后自动取消、剩余时间
+      <van-count-down time="{{  10 * 58 * 60 * 1000 }}" />
+    </view>
+  </view>
+   <!--已完成 订单 -->
+   <view class="content_Q1" wx:if="{{index == 4}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已完成</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+      </view>
+    </view>
+    <view class="more">
+    </view>
+  </view>
+   <!--已完成/退款中 订单 -->
+   <view class="content_Q1" wx:if="{{index == 4}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已完成/退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">同意退款</view>
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">拒绝退款</view>
+     
+      </view>
+    </view>
+  </view>
+   <!--已完成/退货退款中 订单 -->
+   <view class="content_Q1" wx:if="{{index == 4}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已完成/退货退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">修改物流</view>
+        <view class="btn2">拒绝退款</view>
+        <view class="btn2">同意退款</view>
+      </view>
+    </view>
+  </view>
+   <!--已完成/退货退款中 点击了同意退货 订单 -->
+   <view class="content_Q1" wx:if="{{index == 4}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已完成/退货退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn">确认退货收货</view>
+        <view class="btn">修改物流</view>
+      </view>
+    </view>
+  </view>
+   <!--已完成/退货退款中 点击了同意退货 订单 -->
+   <view class="content_Q1" wx:if="{{index == 4}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已完成/退货退款中</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli"  wx:if="{{type == 2}}">获利：现金10.2</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn">联系会员</view>
+        <view class="btn">联系网点</view>
+        <view class="btn">查看物流</view>
+      </view>
+    </view>
+    <view class="more">
+      <view class="more_right">
+        <view class="btn2">拒绝退款</view>
+        <view class="btn2">同意退款</view>
+        <view class="btn2">修改物流</view>
+      </view>
+    </view>
+  </view>
+<!--已关闭 -->
+  <view class="content_Q1" wx:if="{{index == 5}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已关闭</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+        <!-- 数量  -->
+        <view class="content_Q1_center_right_center"> x1</view>
+        <!-- 规格 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+          <text class="huoli" wx:if="{{type == 2}}">获利：现金10.2</text>
+          <text class="guige">2021-01-16 16:50:50</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money">共一件，实际支付<text>¥28.00元</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_left">更多
+        <!-- 点击更多提示框 -->
+        <view class="tishi"></view>
+      </view>
+      <view class="more_right">
+        <view class="btn btn3">删除记录</view>
+      </view>
+    </view>
+  </view>
+  <!-- 退款成功 -->
+  <view class="content_Q1" wx:if="{{index == 6}}">
+    <!-- 头部 -->
+    <view class="content_Q1_title">
+      <view class="content_Q1_title_left">
+        <image src="http://lg.kunzhousc.com/public/static/merch/moren.png"></image>
+        <text>17631140407</text>
+      </view>
+      <view class="content_Q1_title_right">已关闭</view>
+    </view>
+    <!-- 中间 商品详情 -->
+    <view class="content_Q1_center" style="border-bottom: 0rpx solid">
+      <!-- 左边 -->
+      <view class="content_Q1_center_left">
+        <image src="http://image.kunzhousc.com/uploads/2021/0723/54c2697bfd0d2afc51270d405b3e52d3.png"></image>
+      </view>
+      <!-- 右边 -->
+      <view class="content_Q1_center_right">
+        <!-- 右边上边第一块 -->
+        <view class="content_Q1_center_right_top">
+          <view class="content_Q1_center_right_top_left">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+          <view class="content_Q1_center_right_top_right">
+            <text class="icon_price">￥</text>
+            <text class="price">28.00</text>
+          </view>
+        </view>
+
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige">规格：150ml</text>
+        </view>
+        <!-- 退款 -->
+        <view class="content_Q1_center_right_bottom">
+          <text class="guige" style="color: #333333;">退款：¥28.00</text>
+        </view>
+      </view>
+
+    </view>
+    <!-- 实际支付...元 -->
+    <view class="money2">退款成功<text>退款成功¥28.00</text></view>
+    <!-- 更多那一列 按钮 -->
+    <view class="more">
+      <view class="more_right">
+        <view class="btn">删除记录</view>
+      </view>
+    </view>
+  </view>
+</view>

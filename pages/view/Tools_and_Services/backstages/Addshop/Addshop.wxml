@@ -1,0 +1,81 @@
+<!--pages/add_goods/add_goods.wxml-->
+<!-- 假的盒子 因为导航和搜索框用定位 -->
+<view class="jia_box"></view>
+<!-- 导航 -->
+<view class="nav">
+  <view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab== 1?'active':''}}" data-current="1" bindtap="clickTab">
+      <text>审核中</text>
+      <text class="line {{currentTab==1?'active1':''}}"></text>
+    </view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">
+      <text>已驳回</text>
+      <text class="line {{currentTab==2?'active1':''}}"></text>
+    </view>
+  </view>
+</view>
+<!-- 搜索框 -->
+<view class="search">
+  <image style="width: 48rpx;height: 48rpx; margin: 0px 0 0rpx 44rpx;" src="/pages/assets/img/factoryImg/search.png"></image>
+  <input type="text" value="" placeholder="请输入您想要搜索的商品"/>
+  <image bindtap="addshop" style="width: 48rpx;height: 48rpx; margin: 0px 44rpx 0 0rpx ;" src="/pages/assets/img/factoryImg/icon-tianji.png"></image>
+</view>
+<view class="main">
+  <!-- 审核中 -->
+  <view class="{{currentTab == 1 ? 'show':'hidden'}}">
+    <view class="info">
+      <view class="info_top">
+        <text>编号：FBN0000001</text>
+        <text>审核中</text>
+      </view>
+      <view class="info_center">
+      <image src=""></image>
+      <view class="info_center_right">
+        <view class="info_center_right_top">
+          <view class="top_info">
+            <view class="name">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</view>
+            <view class="price">
+              <text>￥</text>
+              <text>28.00</text>
+            </view>
+          </view>
+        </view>
+        <text  class="info_center_right_bottom">上传时间：2021-6-26 15：41：14</text>
+      </view>
+      </view>
+      <view class="info_bottom">
+        <text>商品详情</text>
+      </view>
+    </view>
+  </view>
+  <!-- 已驳回 -->
+  <view class="{{currentTab == 2 ? 'show':'hidden'}}">
+      <view class="info">
+        <view class="info_top">
+          <text>编号：FBN0000001</text>
+          <text>已驳回</text>
+        </view>
+        <view class="info_center">
+        <image src=""></image>
+        <view class="info_center_right">
+          <view class="info_center_right_top">
+            <view class="top_info">
+              <text class="name">免水洗发干发喷雾天然植物成分头发去油干发剂蓬蓬粉蓬松粉</text>
+              <view class="price">
+                <text>￥</text>
+                <text>28.00</text>
+              </view>
+            </view>
+          </view>
+          <text  class="info_center_right_bottom" style="margin-top:20rpx">上传时间：2021-6-26 15：41：14</text>
+          <text  class="info_center_right_bottom" style="margin-top:16rpx">驳回原因：商品质量</text>
+        </view>
+        </view>
+        <view class="info_bottom">
+          <text>驳回原因</text>
+          <text>删除商品</text>
+          <text bindtap="goods_redact">商品编辑</text>
+        </view>
+      </view>
+    </view>
+</view>

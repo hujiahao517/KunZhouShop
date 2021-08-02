@@ -1,0 +1,30 @@
+<!--pages/view/Tools_and_Services/backstages/shop_edit/add_guige/add_guige.wxml-->
+<view class="title">
+  <view class="title_left">规格名称</view>
+  <view class="title_right">
+    <text>规格值</text>
+    <text>添加值</text>
+  </view>
+</view>
+<view class="content_q1" wx:for="{{guige}}" wx:for-index="index2" wx:key="index">
+  <view class="content_q1_left">
+    <image class="cha" bindtap="cha" data-item="{{index2}}" src="/pages/assets/img/factoryImg/cha.png"></image>
+    <input type="text" class="cha_input" value="{{item.name}}" /> :
+  </view>
+  <view class="content_q1_right">
+    <view class="content_q1_right_left">
+      <view class="cha_input2_box"  wx:for="{{item.value}}">
+        <input type="text" class="cha_input2" value="{{item}}" />
+      <image class="xiao_cha" bindtap="xiao_cha" data-indx2="{{index2}}" data-item="{{index}}" src="/pages/assets/img/factoryImg/xiaocha.png"></image>
+      </view>
+    </view>
+    <view class="content_q1_right_right">
+      <image class="content_q1_right_right_image" src="/pages/assets/img/factoryImg/icon-tianji.png" bindtap="add" data-item="{{index2}}"></image>
+    </view>
+  </view>
+</view>
+
+<view class="btns">
+  <view class="btns_left" bindtap="add_zu">添加一组规格</view>
+  <view class="btns_right">完成</view>
+</view>

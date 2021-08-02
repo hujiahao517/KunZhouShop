@@ -1,0 +1,18 @@
+<!--pages/common/prifile/Tools_and_Services/Tools_and_Services.wxml-->
+<!-- 会员 type：0 厂家 type：1 -->
+<!-- 工具与服务 -->
+<view class="Tools_and_Services">
+  <view class="Tools_and_Services_title">工具与服务</view>
+  <view class="Tools_and_Services_bottom">
+    <view class="Tools_and_Services_bottom_q1" wx:if="{{type == 0}}" wx:for="{{Tools_and_Services}}" wx:key="index"
+      wx:for-item="item" bindtap="click_navigateTo" data-itme="{{item}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.text}} </text>
+    </view>
+    <view class="Tools_and_Services_bottom_q1" wx:if="{{type == 1}}" wx:for="{{Tools_and_Services_factory}}" wx:key="index"
+      wx:for-item="item" bindtap="click_navigateTo" data-itme="{{item}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.text}} </text>
+    </view>
+  </view>
+</view>
